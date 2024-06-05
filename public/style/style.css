@@ -1,0 +1,514 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/*MENU*/
+header {
+    background-color: #762828;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center; /* Alinea los elementos al centro horizontalmente */
+    align-items: center;
+}
+
+
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #f0cd07;
+}
+
+.right-icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    background-color: #762828;
+}
+
+.right-icons i {
+    color: #fff;
+    font-size: 1.5em;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.right-icons i:hover {
+    color: #f0cd07;
+}
+
+/*ESTILOS DE ABOUT*/
+
+/* Estilos para la sección About */
+.about-section {
+    display: flex; /* Utiliza el modelo de caja flex para la disposición */
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: center; /* Centra horizontalmente los elementos */
+    margin: 50px; /* Añade un margen de 50 píxeles alrededor */
+}
+
+.about-section h2 {
+    color: blue; /* Cambia el color del texto del encabezado a azul */
+}
+
+.about-text {
+    max-width: 600px; /* Establece el ancho máximo del texto a 600 píxeles */
+    margin-right: 20px; /* Añade un margen derecho de 20 píxeles */
+}
+
+.about-image img {
+    max-width: 300px; /* Establece el ancho máximo de la imagen a 300 píxeles */
+    border-radius: 10px; /* Redondea las esquinas de la imagen con un radio de 10 píxeles */
+}
+
+/* Estilos para la sección Contact */
+.contact-section {
+    display: flex; /* Utiliza el modelo de caja flex para la disposición */
+    flex-direction: column; /* Organiza los elementos en una columna */
+    align-items: center; /* Centra horizontalmente los elementos */
+    margin: 50px; /* Añade un margen de 50 píxeles alrededor */
+}
+
+.contact-form {
+    display: flex; /* Utiliza el modelo de caja flex para la disposición */
+    flex-direction: column; /* Organiza los elementos en una columna */
+    width: 100%; /* Establece el ancho al 100% del contenedor padre */
+    max-width: 400px; /* Establece el ancho máximo del formulario a 400 píxeles */
+}
+
+.contact-form label {
+    margin-top: 10px; /* Añade un margen superior de 10 píxeles */
+    margin-bottom: 5px; /* Añade un margen inferior de 5 píxeles */
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%; /* Establece el ancho al 100% del contenedor padre */
+    padding: 10px; /* Añade un relleno de 10 píxeles */
+    margin-bottom: 20px; /* Añade un margen inferior de 20 píxeles */
+    border: 1px solid #ccc; /* Establece un borde de 1 píxel de color gris claro */
+    border-radius: 5px; /* Redondea las esquinas con un radio de 5 píxeles */
+    box-sizing: border-box; /* Incluye el relleno y el borde en el tamaño total del elemento */
+}
+
+.contact-form button {
+    padding: 10px 20px; /* Añade un relleno de 10 píxeles arriba y abajo, y 20 píxeles a los lados */
+    background-color: #007BFF; /* Establece el color de fondo a azul */
+    color: white; /* Establece el color del texto a blanco */
+    border: none; /* Elimina cualquier borde */
+    border-radius: 5px; /* Redondea las esquinas con un radio de 5 píxeles */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 16px; /* Establece el tamaño de fuente a 16 píxeles */
+    transition: background-color 0.3s ease; /* Añade una transición suave para el color de fondo */
+}
+
+.contact-form button:hover {
+    background-color: #0056b3; /* Cambia el color de fondo cuando el botón es presionado */
+}
+
+/*LOGIN Y REGISTER*/
+
+/* Estilos para las secciones de Registro y Login */
+.register-section, .login-section {
+    display: flex; /* Utiliza el modelo de caja flex para la disposición */
+    flex-direction: column; /* Organiza los elementos en una columna */
+    align-items: center; /* Centra horizontalmente los elementos */
+    margin: 50px; /* Añade un margen de 50 píxeles alrededor */
+}
+
+.register-form, .login-form {
+    display: flex; /* Utiliza el modelo de caja flex para la disposición */
+    flex-direction: column; /* Organiza los elementos en una columna */
+    width: 100%; /* Establece el ancho al 100% del contenedor padre */
+    max-width: 400px; /* Establece el ancho máximo del formulario a 400 píxeles */
+}
+
+.register-form label, .login-form label {
+    margin-top: 10px; /* Añade un margen superior de 10 píxeles */
+    margin-bottom: 5px; /* Añade un margen inferior de 5 píxeles */
+}
+
+.register-form input, .login-form input {
+    width: 100%; /* Establece el ancho al 100% del contenedor padre */
+    padding: 10px; /* Añade un relleno de 10 píxeles */
+    margin-bottom: 20px; /* Añade un margen inferior de 20 píxeles */
+    border: 1px solid #ccc; /* Establece un borde de 1 píxel de color gris claro */
+    border-radius: 5px; /* Redondea las esquinas con un radio de 5 píxeles */
+    box-sizing: border-box; /* Incluye el relleno y el borde en el tamaño total del elemento */
+}
+
+.register-form button, .login-form button {
+    padding: 10px 20px; /* Añade un relleno de 10 píxeles arriba y abajo, y 20 píxeles a los lados */
+    background-color: #28a745; /* Establece el color de fondo a verde */
+    color: white; /* Establece el color del texto a blanco */
+    border: none; /* Elimina cualquier borde */
+    border-radius: 5px; /* Redondea las esquinas con un radio de 5 píxeles */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 16px; /* Establece el tamaño de fuente a 16 píxeles */
+    transition: background-color 0.3s ease; /* Añade una transición suave para el color de fondo */
+}
+
+.register-form button:hover, .login-form button:hover {
+    background-color: #218838; /* Cambia el color de fondo cuando el botón es presionado */
+}
+
+/*SHOP */
+.title{
+    text-align: center;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Tarjeta de producto */
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 220px;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+}
+
+.product-card h2 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+}
+
+.product-card .description {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+}
+
+.product-card .price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #e91e63;
+    margin: 10px 0;
+}
+
+
+/*TABLA*/
+.title {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2em;
+    color: #333;
+}
+
+.product-container {
+    width: 80%;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.product-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.product-container th, 
+.product-container td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.product-container th {
+    background-color: #007BFF;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.product-container tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.product-container tr:hover {
+    background-color: #f1f1f1;
+}
+
+.product-container td button {
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.product-container td button:hover {
+    background-color: #0056b3;
+}
+
+.product-container td button a {
+    color: white;
+    text-decoration: none;
+}
+
+.product-container button a {
+    color: white;
+    text-decoration: none;
+}
+
+.product-container button {
+    display: block;
+    width: max-content;
+    margin: 20px auto;
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.product-container button:hover {
+    background-color: black;
+}
+
+
+/*FORMULARIO AGG PRODUCTOS*/
+h2 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2em;
+    color: #333;
+}
+
+form {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px 0;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"], 
+input[type="number"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el ancho total */
+}
+
+button[type="submit"] {
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    align-self: center;
+    width: max-content;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/*ESTILOS PARA MODAL*/
+/* Estilos para la ventana modal */
+.modal {
+    display: none; /* Por defecto, la ventana modal está oculta */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5); /* Fondo oscuro semi-transparente */
+}
+
+/* Estilos para el contenido de la ventana modal */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* Estilos para el botón de cerrar */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*CARRITO COMPRAS*/
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.left {
+    flex: 2;
+    margin-right: 20px;
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #333;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    max-width: 100px;
+    margin-right: 20px;
+}
+
+.product-info {
+    flex: 1;
+}
+
+.product-info h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.product-controls {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-btn {
+    background: #ddd;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.quantity-input {
+    width: 40px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.price {
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.delete-btn {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.total-container {
+    background: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.total-container p {
+    font-size: 18px;
+    margin: 0 0 20px 0;
+}
+
+.buy-btn {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.buy-btn:hover {
+    background: #218838;
+}

@@ -1,0 +1,52 @@
+<%- include('../partials/head')%>
+
+    <h1 class="title">Todos los productos</h1>
+    <div class="product-container">
+        <table border="1">
+            <tr>
+                <th>ID</th>
+                <th>Nombre de producto</th>
+                <th>Marca</th>
+                <th>Categoria</th>
+                <th>Precio</th>
+                <th></th>
+
+            </tr>
+            <% products.forEach(product=> { %>
+                <tr>
+                    <td>
+                        <%= product.id %>
+                    </td>
+                    <td>
+                        <%= product.nombre_producto %>
+                    </td>
+                    <td>
+                        <%= product.marca %>
+                    </td>
+                    <td>
+                        <%= product.categoria %>
+                    </td>
+                    <td>
+                        <%= product.precio %>
+                    </td>
+                    <td> <button>
+
+                            <a href="/admin/productoactual/<%= product.id%>">Editar</a>
+                            <!-- <i class="fas fa-pencil-alt"></i> -->
+                        </button>
+
+                        <form class="" action="/admin/delete/<%= product.id %>?_method=DELETE" method="post">
+                           <button>Eliminar</button>
+                                <!-- <i class="fas fa-trash-alt"></i> --> 
+                        </form>
+                </tr>
+
+                <% }); %>
+
+        </table>
+        <cil class="aggBtn"><a href="/admin/agregate">Agregar productos</a></button>
+    </div>
+
+
+
+    <%- include('../partials/footer')%>

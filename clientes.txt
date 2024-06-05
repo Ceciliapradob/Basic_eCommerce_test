@@ -1,0 +1,83 @@
+//Coleccion de clientes: 
+// [
+//   {
+//     "nombre": "Juan",
+//     "apellido": "Pérez",
+//     "email": "juanperez@example.com",
+//     "password": "contraseña123",
+//     "productos_favoritos": [
+//       "Limpiavidrios",
+//       "Detergente para Ropa",
+//       "Esponjas de Limpieza"
+//     ],
+//     "compras_realizadas": [
+//       {
+//         "id_compra": "001",
+//         "productos": [
+//           {
+//             "nombre_producto": "Limpiavidrios",
+//             "cantidad": 2,
+//             "precio_unitario": 8.99,
+//             "subtotal": 17.98
+//           },
+//           {
+//             "nombre_producto": "Detergente para Ropa",
+//             "cantidad": 1,
+//             "precio_unitario": 12.49,
+//             "subtotal": 12.49
+//           }
+//         ],
+//         "total": 30.47,
+//         "fecha": "2024-05-10"
+//       },
+//       {
+//         "id_compra": "002",
+//         "productos": [
+//           {
+//             "nombre_producto": "Esponjas de Limpieza",
+//             "cantidad": 3,
+//             "precio_unitario": 3.75,
+//             "subtotal": 11.25
+//           }
+//         ],
+//         "total": 11.25,
+//         "fecha": "2024-06-02"
+//       }
+//     ]
+//   },
+//   {
+//     "nombre": "María",
+//     "apellido": "González",
+//     "email": "mariagonzalez@example.com",
+//     "password": "segura456",
+//     "productos_favoritos": [
+//       "Desinfectante de Superficies",
+//       "Limpia Hornos"
+//     ],
+//     "compras_realizadas": [
+//       {
+//         "id_compra": "003",
+//         "productos": [
+//           {
+//             "nombre_producto": "Desinfectante de Superficies",
+//             "cantidad": 1,
+//             "precio_unitario": 10.99,
+//             "subtotal": 10.99
+//           },
+//           {
+//             "nombre_producto": "Limpia Hornos",
+//             "cantidad": 1,
+//             "precio_unitario": 14.99,
+//             "subtotal": 14.99
+//           }
+//         ],
+//         "total": 25.98,
+//         "fecha": "2024-04-18"
+//       }
+//     ]
+//   }
+// ]
+
+
+// https://www.behance.net/gallery/198333593/eCommerce-Website-Web-Design-Interior-Landing-Page?tracking_source=search_projects|web+ecommerce&l=26
+// db.productos.distinct('categorias')
